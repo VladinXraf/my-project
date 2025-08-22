@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Внимание! Система заблокирована</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="winlocker">
+        <div class="header">
+            <div class="warning-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <h1>ВНИМАНИЕ! СИСТЕМА ЗАБЛОКИРОВАНА</h1>
+        </div>
+
+        <div class="content">
+            <div class="message">
+                <p class="alert">Ваш компьютер был заблокирован из-за подозрительной активности!</p>
+                <p>Обнаружены следующие нарушения:</p>
+                <ul>
+                    <li>Посещение подозрительных веб-сайтов</li>
+                    <li>Загрузка потенциально опасных файлов</li>
+                    <li>Нарушение лицензионного соглашения</li>
+                    <li>Использование нелицензионного программного обеспечения</li>
+                </ul>
+                <p>Для разблокировки компьютера необходимо внести штраф в размере <span class="highlight">5000 рублей</span>.</p>
+                <p class="warning">Внимание! Если вы попытаетесь перезагрузить компьютер или закрыть это окно, все ваши данные будут уничтожены!</p>
+            </div>
+
+            <div class="timer">
+                <p>Времени осталось до блокировки всех данных:</p>
+                <div class="countdown">
+                    <span id="hours">01</span>:<span id="minutes">30</span>:<span id="seconds">00</span>
+                </div>
+            </div>
+
+            <div class="payment">
+                <h2>Способы оплаты:</h2>
+                <div class="payment-methods">
+                    <div class="payment-method">
+                        <i class="fab fa-cc-visa"></i>
+                        <span>Visa</span>
+                    </div>
+                    <div class="payment-method">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <span>MasterCard</span>
+                    </div>
+                    <div class="payment-method">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>Электронные деньги</span>
+                    </div>
+                </div>
+
+                <div class="payment-form">
+                    <div class="form-group">
+                        <label for="card-number">Номер карты:</label>
+                        <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX" maxlength="19">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiry">Срок действия:</label>
+                            <input type="text" id="expiry" placeholder="MM/YY" maxlength="5">
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV:</label>
+                            <input type="password" id="cvv" placeholder="XXX" maxlength="3">
+                        </div>
+                    </div>
+                    <button id="pay-button" class="pay-btn">Оплатить штраф и разблокировать</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2023 Федеральная служба по надзору в сфере связи, информационных технологий и массовых коммуникаций</p>
+            <p>Идентификатор блокировки: WL-<span id="random-id"></span></p>
+        </div>
+    </div>
+
+    <div class="webcam-container">
+        <div class="webcam-header">
+            <i class="fas fa-video"></i> Веб-камера активирована
+        </div>
+        <div class="webcam-feed">
+            <div class="webcam-placeholder">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="unlock-modal" class="modal">
+        <div class="modal-content">
+            <h2>Это всего лишь демонстрация!</h2>
+            <p>Это не настоящий винлокер, а лишь его имитация в образовательных целях.</p>
+            <p>Настоящие винлокеры - это вредоносное ПО, которое блокирует доступ к компьютеру и требует выкуп.</p>
+            <p>Никогда не платите деньги таким мошенникам и используйте антивирусное ПО!</p>
+            <button id="unlock-button">Понятно, закрыть демонстрацию</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
