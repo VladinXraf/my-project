@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameKeys - Бесплатные ключи игр</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-gamepad"></i>
+                <span>GameKeys</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Главная</a>
+                <a href="#games" class="nav-link">Игры</a>
+                <a href="#platforms" class="nav-link">Платформы</a>
+                <a href="#about" class="nav-link">О нас</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Получите бесплатные ключи игр</h1>
+                <p class="hero-subtitle">Steam, Epic Games, Origin и другие платформы</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Начать поиск</button>
+                    <button class="btn btn-secondary">Узнать больше</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-games">
+                    <div class="game-icon steam">
+                        <i class="fab fa-steam"></i>
+                    </div>
+                    <div class="game-icon epic">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="game-icon origin">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div class="game-icon uplay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="platforms" class="platforms">
+            <div class="container">
+                <h2 class="section-title">Платформы</h2>
+                <div class="platforms-grid">
+                    <div class="platform-card steam">
+                        <div class="platform-icon">
+                            <i class="fab fa-steam"></i>
+                        </div>
+                        <h3>Steam</h3>
+                        <p>Самая популярная платформа для игр</p>
+                        <span class="game-count">150+ игр</span>
+                    </div>
+                    <div class="platform-card epic">
+                        <div class="platform-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Epic Games</h3>
+                        <p>Еженедельные бесплатные игры</p>
+                        <span class="game-count">80+ игр</span>
+                    </div>
+                    <div class="platform-card origin">
+                        <div class="platform-icon">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <h3>Origin</h3>
+                        <p>Игры от Electronic Arts</p>
+                        <span class="game-count">45+ игр</span>
+                    </div>
+                    <div class="platform-card uplay">
+                        <div class="platform-icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <h3>Ubisoft Connect</h3>
+                        <p>Игры от Ubisoft</p>
+                        <span class="game-count">30+ игр</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="games">
+            <div class="container">
+                <h2 class="section-title">Популярные игры</h2>
+                <div class="games-filter">
+                    <button class="filter-btn active" data-platform="all">Все</button>
+                    <button class="filter-btn" data-platform="steam">Steam</button>
+                    <button class="filter-btn" data-platform="epic">Epic</button>
+                    <button class="filter-btn" data-platform="origin">Origin</button>
+                    <button class="filter-btn" data-platform="uplay">Uplay</button>
+                </div>
+                <div class="games-grid">
+                    <div class="game-card" data-platform="steam">
+                        <div class="game-image">
+                            <img src="https://via.placeholder.com/300x200/1b2838/ffffff?text=Counter-Strike" alt="Counter-Strike">
+                            <div class="platform-badge steam">Steam</div>
+                        </div>
+                        <div class="game-info">
+                            <h3>Counter-Strike 2</h3>
+                            <p>Легендарный шутер от первого лица</p>
+                            <div class="game-meta">
+                                <span class="genre">FPS</span>
+                                <span class="rating">9.5/10</span>
+                            </div>
+                            <button class="btn btn-success">Получить ключ</button>
+                        </div>
+                    </div>
+
+                    <div class="game-card" data-platform="epic">
+                        <div class="game-image">
+                            <img src="https://via.placeholder.com/300x200/2a2a2a/ffffff?text=Fortnite" alt="Fortnite">
+                            <div class="platform-badge epic">Epic</div>
+                        </div>
+                        <div class="game-info">
+                            <h3>Fortnite</h3>
+                            <p>Королевская битва с строительством</p>
+                            <div class="game-meta">
+                                <span class="genre">Battle Royale</span>
+                                <span class="rating">8.8/10</span>
+                            </div>
+                            <button class="btn btn-success">Получить ключ</button>
+                        </div>
+                    </div>
+
+                    <div class="game-card" data-platform="origin">
+                        <div class="game-image">
+                            <img src="https://via.placeholder.com/300x200/ff6b35/ffffff?text=Battlefield" alt="Battlefield">
+                            <div class="platform-badge origin">Origin</div>
+                        </div>
+                        <div class="game-info">
+                            <h3>Battlefield 2042</h3>
+                            <p>Масштабные военные сражения</p>
+                            <div class="game-meta">
+                                <span class="genre">FPS</span>
+                                <span class="rating">7.2/10</span>
+                            </div>
+                            <button class="btn btn-success">Получить ключ</button>
+                        </div>
+                    </div>
+
+                    <div class="game-card" data-platform="uplay">
+                        <div class="game-image">
+                            <img src="https://via.placeholder.com/300x200/007acc/ffffff?text=Assassin's+Creed" alt="Assassin's Creed">
+                            <div class="platform-badge uplay">Uplay</div>
+                        </div>
+                        <div class="game-info">
+                            <h3>Assassin's Creed Valhalla</h3>
+                            <p>Эпическое приключение викингов</p>
+                            <div class="game-meta">
+                                <span class="genre">RPG</span>
+                                <span class="rating">8.5/10</span>
+                            </div>
+                            <button class="btn btn-success">Получить ключ</button>
+                        </div>
+                    </div>
+
+                    <div class="game-card" data-platform="steam">
+                        <div class="game-image">
+                            <img src="https://via.placeholder.com/300x200/1b2838/ffffff?text=Dota+2" alt="Dota 2">
+                            <div class="platform-badge steam">Steam</div>
+                        </div>
+                        <div class="game-info">
+                            <h3>Dota 2</h3>
+                            <p>Командная стратегия в реальном времени</p>
+                            <div class="game-meta">
+                                <span class="genre">MOBA</span>
+                                <span class="rating">9.0/10</span>
+                            </div>
+                            <button class="btn btn-success">Получить ключ</button>
+                        </div>
+                    </div>
+
+                    <div class="game-card" data-platform="epic">
+                        <div class="game-image">
+                            <img src="https://via.placeholder.com/300x200/2a2a2a/ffffff?text=Genshin+Impact" alt="Genshin Impact">
+                            <div class="platform-badge epic">Epic</div>
+                        </div>
+                        <div class="game-info">
+                            <h3>Genshin Impact</h3>
+                            <p>Открытый мир с элементами аниме</p>
+                            <div class="game-meta">
+                                <span class="genre">RPG</span>
+                                <span class="rating">8.7/10</span>
+                            </div>
+                            <button class="btn btn-success">Получить ключ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">О нас</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>GameKeys - это платформа, которая помогает геймерам находить и получать бесплатные ключи для игр на различных платформах. Мы сотрудничаем с разработчиками и издателями, чтобы предоставить вам доступ к лучшим играм.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">Игр доступно</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">50K+</span>
+                                <span class="stat-label">Пользователей</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">Поддержка</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GameKeys</h3>
+                    <p>Лучшие бесплатные ключи игр</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Платформы</h4>
+                    <ul>
+                        <li><a href="#">Steam</a></li>
+                        <li><a href="#">Epic Games</a></li>
+                        <li><a href="#">Origin</a></li>
+                        <li><a href="#">Ubisoft Connect</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GameKeys. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
