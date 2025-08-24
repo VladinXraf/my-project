@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameKeys - Готовые ключи от платных игр</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-gamepad"></i>
+                <span>GameKeys</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Главная</a></li>
+                <li><a href="#games" class="nav-link">Игры</a></li>
+                <li><a href="#platforms" class="nav-link">Платформы</a></li>
+                <li><a href="#about" class="nav-link">О нас</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Готовые ключи от 
+                <span class="gradient-text">платных игр</span>
+            </h1>
+            <p class="hero-subtitle">
+                Получите доступ к лучшим играм бесплатно! Все ключи уже готовы и проверены.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Доступных ключей</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Игр</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10000">0</div>
+                    <div class="stat-label">Довольных пользователей</div>
+                </div>
+            </div>
+            <a href="#games" class="cta-button">
+                <i class="fas fa-play"></i>
+                Получить ключ
+            </a>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-icons">
+                <i class="fab fa-steam"></i>
+                <i class="fab fa-playstation"></i>
+                <i class="fab fa-xbox"></i>
+                <i class="fab fa-apple"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games">
+        <div class="container">
+            <div class="section-header">
+                <h2>Доступные игры</h2>
+                <p>Выберите игру и получите готовый ключ активации</p>
+            </div>
+            
+            <!-- Search and Filter -->
+            <div class="games-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="gameSearch" placeholder="Поиск игр...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-platform="all">Все</button>
+                    <button class="filter-btn" data-platform="steam">Steam</button>
+                    <button class="filter-btn" data-platform="epic">Epic Games</button>
+                    <button class="filter-btn" data-platform="origin">Origin</button>
+                    <button class="filter-btn" data-platform="uplay">Ubisoft</button>
+                </div>
+            </div>
+
+            <!-- Games Grid -->
+            <div class="games-grid" id="gamesGrid">
+                <!-- Steam Games -->
+                <div class="game-card" data-platform="steam" data-price="59.99">
+                    <div class="game-image">
+                        <img src="https://via.placeholder.com/300x200/1b2838/ffffff?text=Cyberpunk+2077" alt="Cyberpunk 2077">
+                        <div class="platform-badge steam">
+                            <i class="fab fa-steam"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Cyberpunk 2077</h3>
+                        <p>Открытый мир, RPG, киберпанк</p>
+                        <div class="game-meta">
+                            <span class="original-price">59.99$</span>
+                            <span class="free-badge">БЕСПЛАТНО</span>
+                        </div>
+                        <button class="get-key-btn" data-game="Cyberpunk 2077" data-key="CP2077-STEAM-XXXX-YYYY-ZZZZ">
+                            <i class="fas fa-key"></i>
+                            Получить ключ
+                        </button>
+                    </div>
+                </div>
+
+                <div class="game-card" data-platform="steam" data-price="39.99">
+                    <div class="game-image">
+                        <img src="https://via.placeholder.com/300x200/1b2838/ffffff?text=Red+Dead+Redemption+2" alt="Red Dead Redemption 2">
+                        <div class="platform-badge steam">
+                            <i class="fab fa-steam"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Red Dead Redemption 2</h3>
+                        <p>Вестерн, открытый мир, приключения</p>
+                        <div class="game-meta">
+                            <span class="original-price">39.99$</span>
+                            <span class="free-badge">БЕСПЛАТНО</span>
+                        </div>
+                        <button class="get-key-btn" data-game="Red Dead Redemption 2" data-key="RDR2-STEAM-AAAA-BBBB-CCCC">
+                            <i class="fas fa-key"></i>
+                            Получить ключ
+                        </button>
+                    </div>
+                </div>
+
+                <div class="game-card" data-platform="steam" data-price="29.99">
+                    <div class="game-image">
+                        <img src="https://via.placeholder.com/300x200/1b2838/ffffff?text=The+Witcher+3" alt="The Witcher 3">
+                        <div class="platform-badge steam">
+                            <i class="fab fa-steam"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>The Witcher 3: Wild Hunt</h3>
+                        <p>RPG, фэнтези, открытый мир</p>
+                        <div class="game-meta">
+                            <span class="original-price">29.99$</span>
+                            <span class="free-badge">БЕСПЛАТНО</span>
+                        </div>
+                        <button class="get-key-btn" data-game="The Witcher 3: Wild Hunt" data-key="WITCHER3-STEAM-DDDD-EEEE-FFFF">
+                            <i class="fas fa-key"></i>
+                            Получить ключ
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Epic Games -->
+                <div class="game-card" data-platform="epic" data-price="49.99">
+                    <div class="game-image">
+                        <img src="https://via.placeholder.com/300x200/2e2e2e/ffffff?text=God+of+War" alt="God of War">
+                        <div class="platform-badge epic">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>God of War</h3>
+                        <p>Экшен, приключения, мифология</p>
+                        <div class="game-meta">
+                            <span class="original-price">49.99$</span>
+                            <span class="free-badge">БЕСПЛАТНО</span>
+                        </div>
+                        <button class="get-key-btn" data-game="God of War" data-key="GOW-EPIC-GGGG-HHHH-IIII">
+                            <i class="fas fa-key"></i>
+                            Получить ключ
+                        </button>
+                    </div>
+                </div>
+
+                <div class="game-card" data-platform="epic" data-price="34.99">
+                    <div class="game-image">
+                        <img src="https://via.placeholder.com/300x200/2e2e2e/ffffff?text=Horizon+Zero+Dawn" alt="Horizon Zero Dawn">
+                        <div class="platform-badge epic">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Horizon Zero Dawn</h3>
+                        <p>Постапокалипсис, открытый мир, роботы</p>
+                        <div class="game-meta">
+                            <span class="original-price">34.99$</span>
+                            <span class="free-badge">БЕСПЛАТНО</span>
+                        </div>
+                        <button class="get-key-btn" data-game="Horizon Zero Dawn" data-key="HZD-EPIC-JJJJ-KKKK-LLLL">
+                            <i class="fas fa-key"></i>
+                            Получить ключ
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Origin Games -->
+                <div class="game-card" data-platform="origin" data-price="44.99">
+                    <div class="game-image">
+                        <img src="https://via.placeholder.com/300x200/f56c2d/ffffff?text=Battlefield+2042" alt="Battlefield 2042">
+                        <div class="platform-badge origin">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Battlefield 2042</h3>
+                        <p>Шутер, мультиплеер, военные действия</p>
+                        <div class="game-meta">
+                            <span class="original-price">44.99$</span>
+                            <span class="free-badge">БЕСПЛАТНО</span>
+                        </div>
+                        <button class="get-key-btn" data-game="Battlefield 2042" data-key="BF2042-ORIGIN-MMMM-NNNN-OOOO">
+                            <i class="fas fa-key"></i>
+                            Получить ключ
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Ubisoft Games -->
+                <div class="game-card" data-platform="uplay" data-price="39.99">
+                    <div class="game-image">
+                        <img src="https://via.placeholder.com/300x200/0070ff/ffffff?text=Assassin's+Creed+Valhalla" alt="Assassin's Creed Valhalla">
+                        <div class="platform-badge uplay">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Assassin's Creed Valhalla</h3>
+                        <p>Стелс, открытый мир, викинги</p>
+                        <div class="game-meta">
+                            <span class="original-price">39.99$</span>
+                            <span class="free-badge">БЕСПЛАТНО</span>
+                        </div>
+                        <button class="get-key-btn" data-game="Assassin's Creed Valhalla" data-key="ACV-UPLAY-PPPP-QQQQ-RRRR">
+                            <i class="fas fa-key"></i>
+                            Получить ключ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Section -->
+    <section id="platforms" class="platforms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Поддерживаемые платформы</h2>
+                <p>Ключи работают на всех популярных игровых платформах</p>
+            </div>
+            <div class="platforms-grid">
+                <div class="platform-card">
+                    <div class="platform-icon steam">
+                        <i class="fab fa-steam"></i>
+                    </div>
+                    <h3>Steam</h3>
+                    <p>250+ игр</p>
+                    <div class="platform-features">
+                        <span>Автоматическая активация</span>
+                        <span>Мгновенная доставка</span>
+                        <span>Поддержка 24/7</span>
+                    </div>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon epic">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Epic Games</h3>
+                    <p>120+ игр</p>
+                    <div class="platform-features">
+                        <span>Бесплатные игры еженедельно</span>
+                        <span>Эксклюзивы</span>
+                        <span>Высокие скидки</span>
+                    </div>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon origin">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Origin</h3>
+                    <p>80+ игр</p>
+                    <div class="platform-features">
+                        <span>EA Play подписка</span>
+                        <span>Ранний доступ</span>
+                        <span>Эксклюзивный контент</span>
+                    </div>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-icon uplay">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Ubisoft Connect</h3>
+                    <p>60+ игр</p>
+                    <div class="platform-features">
+                        <span>Rewards программа</span>
+                        <span>Кроссплатформенность</span>
+                        <span>Социальные функции</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>О нашем сервисе</h2>
+                    <p>Мы предоставляем готовые ключи активации от самых популярных платных игр. Все ключи проверены и гарантированно работают.</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% рабочие ключи</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Мгновенная доставка</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Поддержка всех платформ</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Безопасные транзакции</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="stats-cards">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">10,000+</div>
+                                <div class="stat-label">Пользователей</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Ключей</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-gamepad"></i>
+                    <span>GameKeys</span>
+                </div>
+                <p>Лучшие ключи от платных игр бесплатно</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GameKeys. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Key Modal -->
+    <div id="keyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Ваш ключ активации</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="game-info-modal">
+                    <img id="modalGameImage" src="" alt="">
+                    <div>
+                        <h4 id="modalGameTitle"></h4>
+                        <p id="modalGameDescription"></p>
+                    </div>
+                </div>
+                <div class="key-display">
+                    <label>Ключ активации:</label>
+                    <div class="key-input-group">
+                        <input type="text" id="keyInput" readonly>
+                        <button id="copyKeyBtn" class="copy-btn">
+                            <i class="fas fa-copy"></i>
+                            Копировать
+                        </button>
+                    </div>
+                </div>
+                <div class="activation-steps">
+                    <h5>Как активировать:</h5>
+                    <ol>
+                        <li>Скопируйте ключ выше</li>
+                        <li>Откройте соответствующую платформу</li>
+                        <li>Введите ключ в разделе "Активировать продукт"</li>
+                        <li>Наслаждайтесь игрой!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
