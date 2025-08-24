@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Академия Успеха - Платформенные курсы</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Академия Успеха</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#courses">Курсы</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Достигните новых высот с нашими курсами</h1>
+            <p>Профессиональное обучение от экспертов индустрии. Начните свой путь к успеху уже сегодня!</p>
+            <a href="#courses" class="btn btn-primary">Начать обучение</a>
+        </div>
+        <div class="hero-image">
+            <div class="hero-graphic">
+                <i class="fas fa-rocket"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Наши курсы</h2>
+            <p class="section-subtitle">Выберите курс, который подходит именно вам</p>
+            
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Web-разработка</h3>
+                        <p>Изучите современные технологии веб-разработки и создавайте потрясающие сайты</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> HTML, CSS, JavaScript</li>
+                            <li><i class="fas fa-check"></i> React и Node.js</li>
+                            <li><i class="fas fa-check"></i> Практические проекты</li>
+                        </ul>
+                        <div class="course-price">
+                            <span class="price">₽29,900</span>
+                            <button class="btn btn-secondary buy-course" data-course="web-dev" data-price="29900">
+                                Купить курс
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Маркетинг и продажи</h3>
+                        <p>Освойте современные стратегии маркетинга и увеличьте свои продажи</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> SMM и контент-маркетинг</li>
+                            <li><i class="fas fa-check"></i> Аналитика и оптимизация</li>
+                            <li><i class="fas fa-check"></i> Работа с клиентами</li>
+                        </ul>
+                        <div class="course-price">
+                            <span class="price">₽24,900</span>
+                            <button class="btn btn-secondary buy-course" data-course="marketing" data-price="24900">
+                                Купить курс
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Дизайн и креатив</h3>
+                        <p>Развивайте креативное мышление и создавайте уникальные дизайны</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> UI/UX дизайн</li>
+                            <li><i class="fas fa-check"></i> Графический дизайн</li>
+                            <li><i class="fas fa-check"></i> Брендинг и айдентика</li>
+                        </ul>
+                        <div class="course-price">
+                            <span class="price">₽19,900</span>
+                            <button class="btn btn-secondary buy-course" data-course="design" data-price="19900">
+                                Купить курс
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>О нашей академии</h2>
+                <p>Мы - команда профессионалов, которая помогает людям достигать успеха в различных областях. Наши курсы разработаны экспертами индустрии и включают практические задания, которые помогут вам закрепить полученные знания.</p>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>1000+</h3>
+                        <p>Выпускников</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Экспертов</p>
+                    </div>
+                    <div class="stat">
+                        <h3>95%</h3>
+                        <p>Успешных проектов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@academy-success.ru</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (800) 555-0123</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Москва, ул. Успеха, д. 1</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Сообщение" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Академия Успеха</span>
+                </div>
+                <p>&copy; 2024 Академия Успеха. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Оплата курса</h2>
+            <div id="courseInfo"></div>
+            <div class="payment-form">
+                <div class="form-group">
+                    <label for="cardNumber">Номер карты</label>
+                    <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiry">Срок действия</label>
+                        <input type="text" id="expiry" placeholder="MM/YY" maxlength="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123" maxlength="3">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cardName">Имя владельца карты</label>
+                    <input type="text" id="cardName" placeholder="ИВАН ИВАНОВ">
+                </div>
+                <button id="payButton" class="btn btn-primary">Оплатить</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content success">
+            <i class="fas fa-check-circle"></i>
+            <h2>Оплата прошла успешно!</h2>
+            <p>Спасибо за покупку! Мы отправили вам доступ к курсу на email.</p>
+            <button class="btn btn-primary" onclick="closeSuccessModal()">Отлично!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
