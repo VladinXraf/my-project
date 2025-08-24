@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Программирование - Мир кода</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>CodeWorld</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#languages">Языки</a></li>
+                    <li><a href="#tutorials">Уроки</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Добро пожаловать в мир программирования</h1>
+                    <p>Изучайте языки программирования, создавайте проекты и развивайте свои навыки в IT</p>
+                    <div class="hero-buttons">
+                        <a href="#languages" class="btn btn-primary">Начать изучение</a>
+                        <a href="#tutorials" class="btn btn-secondary">Смотреть уроки</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="code-animation">
+                        <div class="code-line">function helloWorld() {</div>
+                        <div class="code-line">  console.log("Привет, мир!");</div>
+                        <div class="code-line">}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="languages" class="languages">
+            <div class="container">
+                <h2>Популярные языки программирования</h2>
+                <div class="languages-grid">
+                    <div class="language-card">
+                        <div class="language-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Язык веб-разработки для создания интерактивных сайтов и приложений</p>
+                        <div class="language-stats">
+                            <span class="difficulty easy">Легкий</span>
+                            <span class="popularity high">Популярный</span>
+                        </div>
+                    </div>
+                    <div class="language-card">
+                        <div class="language-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <p>Универсальный язык для веб-разработки, анализа данных и ИИ</p>
+                        <div class="language-stats">
+                            <span class="difficulty easy">Легкий</span>
+                            <span class="popularity high">Популярный</span>
+                        </div>
+                    </div>
+                    <div class="language-card">
+                        <div class="language-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h3>Java</h3>
+                        <p>Кроссплатформенный язык для разработки приложений и Android</p>
+                        <div class="language-stats">
+                            <span class="difficulty medium">Средний</span>
+                            <span class="popularity high">Популярный</span>
+                        </div>
+                    </div>
+                    <div class="language-card">
+                        <div class="language-icon">
+                            <i class="fab fa-cpp"></i>
+                        </div>
+                        <h3>C++</h3>
+                        <p>Мощный язык для системного программирования и игр</p>
+                        <div class="language-stats">
+                            <span class="difficulty hard">Сложный</span>
+                            <span class="popularity medium">Средний</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tutorials" class="tutorials">
+            <div class="container">
+                <h2>Уроки программирования</h2>
+                <div class="tutorials-grid">
+                    <div class="tutorial-card">
+                        <div class="tutorial-image">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="tutorial-content">
+                            <h3>Основы JavaScript</h3>
+                            <p>Изучите базовые концепции JavaScript: переменные, функции, циклы</p>
+                            <div class="tutorial-meta">
+                                <span><i class="fas fa-clock"></i> 45 мин</span>
+                                <span><i class="fas fa-user-graduate"></i> Начинающий</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutorial-card">
+                        <div class="tutorial-image">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="tutorial-content">
+                            <h3>Python для начинающих</h3>
+                            <p>Погружение в мир Python: синтаксис, структуры данных, ООП</p>
+                            <div class="tutorial-meta">
+                                <span><i class="fas fa-clock"></i> 60 мин</span>
+                                <span><i class="fas fa-user-graduate"></i> Начинающий</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutorial-card">
+                        <div class="tutorial-image">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="tutorial-content">
+                            <h3>Веб-разработка с HTML/CSS</h3>
+                            <p>Создание красивых и отзывчивых веб-страниц</p>
+                            <div class="tutorial-meta">
+                                <span><i class="fas fa-clock"></i> 90 мин</span>
+                                <span><i class="fas fa-user-graduate"></i> Начинающий</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Примеры проектов</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Калькулятор</h3>
+                        <p>Простой калькулятор на JavaScript с базовыми математическими операциями</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Игра "Змейка"</h3>
+                        <p>Классическая игра на Python с использованием библиотеки Pygame</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pygame</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3>Todo приложение</h3>
+                        <p>Приложение для управления задачами с возможностью добавления и удаления</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Свяжитесь с нами</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Получите помощь в изучении программирования</h3>
+                        <p>Наша команда экспертов готова помочь вам на пути к успеху в IT</p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <span>info@codeworld.ru</span>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-phone"></i>
+                                <span>+7 (999) 123-45-67</span>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Москва, Россия</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CodeWorld</h4>
+                    <p>Ваш путеводитель в мире программирования</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#languages">Языки</a></li>
+                        <li><a href="#tutorials">Уроки</a></li>
+                        <li><a href="#projects">Проекты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ресурсы</h4>
+                    <ul>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">Форум</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeWorld. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
